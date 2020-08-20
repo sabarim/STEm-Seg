@@ -1,0 +1,266 @@
+- id: 1
+  ignore_mask: false
+  keep: false
+  label: Bird
+- id: 2
+  ignore_mask: false
+  keep: false
+  label: Ground Animal
+- id: 3
+  ignore_mask: false
+  keep: false
+  label: Curb
+- id: 4
+  ignore_mask: false
+  keep: false
+  label: Fence
+- id: 5
+  ignore_mask: false
+  keep: false
+  label: Guard Rail
+- id: 6
+  ignore_mask: false
+  keep: false
+  label: Barrier
+- id: 7
+  ignore_mask: false
+  keep: false
+  label: Wall
+- id: 8
+  ignore_mask: false
+  keep: false
+  label: Bike Lane
+- id: 9
+  ignore_mask: false
+  keep: false
+  label: Crosswalk - Plain
+- id: 10
+  ignore_mask: false
+  keep: false
+  label: Curb Cut
+- id: 11
+  ignore_mask: false
+  keep: false
+  label: Parking
+- id: 12
+  ignore_mask: false
+  keep: false
+  label: Pedestrian Area
+- id: 13
+  ignore_mask: false
+  keep: false
+  label: Rail Track
+- id: 14
+  ignore_mask: false
+  keep: false
+  label: Road
+- id: 15
+  ignore_mask: false
+  keep: false
+  label: Service Lane
+- id: 16
+  ignore_mask: false
+  keep: false
+  label: Sidewalk
+- id: 17
+  ignore_mask: false
+  keep: false
+  label: Bridge
+- id: 18
+  ignore_mask: false
+  keep: false
+  label: Building
+- id: 19
+  ignore_mask: false
+  keep: false
+  label: Tunnel
+- id: 20
+  id_kittimots: 2
+  ignore_mask: false
+  keep: true
+  label: Person
+- id: 21
+  ignore_mask: true
+  keep: false
+  label: Bicyclist
+- id: 22
+  ignore_mask: true
+  keep: false
+  label: Motorcyclist
+- id: 23
+  ignore_mask: true
+  keep: false
+  label: Other Rider
+- id: 24
+  ignore_mask: false
+  keep: false
+  label: Lane Marking - Crosswalk
+- id: 25
+  ignore_mask: false
+  keep: false
+  label: Lane Marking - General
+- id: 26
+  ignore_mask: false
+  keep: false
+  label: Mountain
+- id: 27
+  ignore_mask: false
+  keep: false
+  label: Sand
+- id: 28
+  ignore_mask: false
+  keep: false
+  label: Sky
+- id: 29
+  ignore_mask: false
+  keep: false
+  label: Snow
+- id: 30
+  ignore_mask: false
+  keep: false
+  label: Terrain
+- id: 31
+  ignore_mask: false
+  keep: false
+  label: Vegetation
+- id: 32
+  ignore_mask: false
+  keep: false
+  label: Water
+- id: 33
+  ignore_mask: false
+  keep: false
+  label: Banner
+- id: 34
+  ignore_mask: false
+  keep: false
+  label: Bench
+- id: 35
+  ignore_mask: false
+  keep: false
+  label: Bike Rack
+- id: 36
+  ignore_mask: false
+  keep: false
+  label: Billboard
+- id: 37
+  ignore_mask: false
+  keep: false
+  label: Catch Basin
+- id: 38
+  ignore_mask: false
+  keep: false
+  label: CCTV Camera
+- id: 39
+  ignore_mask: false
+  keep: false
+  label: Fire Hydrant
+- id: 40
+  ignore_mask: false
+  keep: false
+  label: Junction Box
+- id: 41
+  ignore_mask: false
+  keep: false
+  label: Mailbox
+- id: 42
+  ignore_mask: false
+  keep: false
+  label: Manhole
+- id: 43
+  ignore_mask: false
+  keep: false
+  label: Phone Booth
+- id: 44
+  ignore_mask: false
+  keep: false
+  label: Pothole
+- id: 45
+  ignore_mask: false
+  keep: false
+  label: Street Light
+- id: 46
+  ignore_mask: false
+  keep: false
+  label: Pole
+- id: 47
+  ignore_mask: false
+  keep: false
+  label: Traffic Sign Frame
+- id: 48
+  ignore_mask: false
+  keep: false
+  label: Utility Pole
+- id: 49
+  ignore_mask: false
+  keep: false
+  label: Traffic Light
+- id: 50
+  ignore_mask: false
+  keep: false
+  label: Traffic Sign (Back)
+- id: 51
+  ignore_mask: false
+  keep: false
+  label: Traffic Sign (Front)
+- id: 52
+  ignore_mask: false
+  keep: false
+  label: Trash Can
+- id: 53
+  ignore_mask: true
+  keep: false
+  label: Bicycle
+- id: 54
+  ignore_mask: false
+  keep: false
+  label: Boat
+- id: 55
+  ignore_mask: true
+  keep: false
+  label: Bus
+- id: 56
+  id_kittimots: 1
+  ignore_mask: false
+  keep: true
+  label: Car
+- id: 57
+  ignore_mask: true
+  keep: false
+  label: Caravan
+- id: 58
+  ignore_mask: true
+  keep: false
+  label: Motorcycle
+- id: 59
+  ignore_mask: true
+  keep: false
+  label: On Rails
+- id: 60
+  ignore_mask: true
+  keep: false
+  label: Other Vehicle
+- id: 61
+  ignore_mask: true
+  keep: false
+  label: Trailer
+- id: 62
+  ignore_mask: true
+  keep: false
+  label: Truck
+- id: 63
+  ignore_mask: true
+  keep: false
+  label: Wheeled Slow
+- id: 64
+  ignore_mask: false
+  keep: false
+  label: Car Mount
+- id: 65
+  ignore_mask: false
+  keep: false
+  label: Ego Vehicle
+- id: 66
+  ignore_mask: false
+  keep: false
+  label: Unlabeled
