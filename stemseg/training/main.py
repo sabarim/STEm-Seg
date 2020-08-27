@@ -103,6 +103,9 @@ class Trainer(object):
                      'logger': self.logger.state_dict(),
                      'iterations': self.elapsed_iterations}
 
+        if global_cfg.TRAINING.MIXED_PRECISION:
+            save_dict['amp'] = amp.state_dict()
+
         torch.save(save_dict, model_save_path, _use_new_zipfile_serialization=False)
         self.console_logger.info("Checkpoint saved to: {}".format(model_save_path))
         return model_save_path
@@ -119,6 +122,9 @@ class Trainer(object):
 
         assert 'iterations' in restore_dict, "Restore state dict contains no entry named 'iterations'"
         self.elapsed_iterations = restore_dict['iterations']
+
+        if 'amp' in restore_dict and global_cfg.TRAINING.MIXED_PRECISION:
+            amp.load_state_dict(restore_dict['amp'])
 
         if self.is_main_process:
             assert 'logger' in restore_dict, "Restore state dict contains no entry named 'logger'"
