@@ -169,15 +169,15 @@ Here as well, the final inference was done on 8 frame clips, but we trained in t
 
 * Run `python stemseg/training/main.py --help` for the full list of options.
 
-### Implementing Other Datasets
+## Implementing Other Datasets
 
 Extending the training/inference to other datasets should be easy since most of the code is dataset agnostic.
 
-#### Inference
+### Inference
 
 See the if/else block in the `main` method in `inference/main.py`. You will just have to implement a class that converts the segmentation masks produced by the framework to whatever format you want (see any of the scripts in `stemseg/inference/output_utils` for examples).
 
-#### Training
+### Training
 
 You will first have to convert the annotations for your dataset to the standard JSON format used by this code. Inspect any of the given JSON files to see what the format should be like. The segmentation masks are encoded in RLE format using [pycocotools](https://pypi.org/project/pycocotools/). To better understand the file format, you can also see `stemseg/data/generic_video_dataset_parser.py` and `stemseg/data/generic_image_dataset_parser.py` where these files are read and parsed.
 
