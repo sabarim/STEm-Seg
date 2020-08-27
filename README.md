@@ -1,5 +1,5 @@
 # STEm-Seg
-This repository contains the official implementation for the paper:
+This repository contains the official inference and training implementation for the paper:
 
 **STEm-Seg: Spatio-temporal Embeddings for Instance Segmentation in Videos**
 
@@ -26,17 +26,14 @@ ECCV 2020 | [Paper](https://arxiv.org/abs/2003.08429) | [Video](https://youtu.be
    ```
 
    
-2. Download the required datasets from their respective websites. For inference, you only need the validation sets of the target dataset. For training, the table below shows which dataset(s) you will need:
+2. Download the required datasets from their respective websites and the trained model checkpoints from the given links. For inference, you only need the validation sets of the target dataset. For training, the table below shows which dataset(s) you will need:
 
-    | Target Dataset        | Datasets Required  |
-    |-----------------------| -------------------------------|
-    | [DAVIS](https://data.vision.ee.ethz.ch/csergi/share/davis/DAVIS-2017-Unsupervised-trainval-480p.zip)                 | DAVIS'17, YouTubeVIS, COCO Instance Segmentation, PascalVOC |
-    | [YouTube-VIS](https://competitions.codalab.org/competitions/20128#participate-get_data)           | YouTube-VIS, COCO Instance Segmentation, PascalVOC |
-    | [KITTI-MOTS](https://www.vision.rwth-aachen.de/page/mots)            | Mapillary images, KITTI-MOTS, sequence `0002` from [MOTSChallenge](https://motchallenge.net/data/MOTS/) |
+    | Target Dataset        | Datasets Required for Training  | Model Checkpoint |
+    |-----------------------| -------------------------------|--------------|
+    | [DAVIS](https://data.vision.ee.ethz.ch/csergi/share/davis/DAVIS-2017-Unsupervised-trainval-480p.zip)                 | DAVIS'17, YouTubeVIS, COCO Instance Segmentation, PascalVOC | [link](https://omnomnom.vision.rwth-aachen.de/data/STEm-Seg/models/davis.pth)
+    | [YouTube-VIS](https://competitions.codalab.org/competitions/20128#participate-get_data)           | YouTube-VIS, COCO Instance Segmentation, PascalVOC | [link](https://omnomnom.vision.rwth-aachen.de/data/STEm-Seg/models/youtube_vis.pth)
+    | [KITTI-MOTS](https://www.vision.rwth-aachen.de/page/mots)            | Mapillary images, KITTI-MOTS, sequence `0002` from [MOTSChallenge](https://motchallenge.net/data/MOTS/) | [link](https://omnomnom.vision.rwth-aachen.de/data/STEm-Seg/models/kitti_mots.pth)
     
-    
-3. Download our checkpoints from [here](https://omnomnom.vision.rwth-aachen.de/data/STEm-Seg/models). This URL directory also contains the pre-trained Mask-RCNN backbone that you will need if you want to train your own models.
-
 
 ## Environment Variables
 
@@ -57,7 +54,7 @@ For inference, you only need to set the relevant variable for the target dataset
 
 #### Video Datasets
    
-1. `DAVIS_BASE_DIR`: Set this to the full path of the `JPEGImages/480p` directory for the DAVIS dataset. The image frames for all 60 training and validation videos should be present in the directory. This variable is required for training/inference on DAVIS'19 Unsupervised.
+1. `DAVIS_BASE_DIR`: Set this to the full path of the `JPEGImages/480p` directory for the DAVIS dataset. The image frames for all 60 training and 30 validation videos should be present in the directory. This variable is required for training/inference on DAVIS'19 Unsupervised.
   
 2. `YOUTUBE_VIS_BASE_DIR`: Set this to the parent directory of the `train` and `val` directories for the YouTube-VIS dataset. This variable is required for training/inference on YouTube-VIS and also for training for DAVIS.
    
