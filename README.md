@@ -17,7 +17,7 @@ ECCV 2020 | [Paper](https://arxiv.org/abs/2003.08429) | [Video](https://youtu.be
 
 ## Basic Setup
 
-1. Clone the repository and add append it to the `PYTHONPATH` variable:
+1. Clone the repository and append it to the `PYTHONPATH` variable:
 
    ```bash
    git clone https://github.com/sabarim/STEm-Seg.git
