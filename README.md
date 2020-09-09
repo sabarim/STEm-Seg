@@ -188,7 +188,7 @@ Once this is done, you can utilize the `VideoDataset` API in `stemseg/data/video
 Use the following BibTeX to cite our work:
 
 ```
-@inproceedings{Athar20ECCV,
+@inproceedings{Athar_Mahadevan20ECCV,
   title={STEm-Seg: Spatio-temporal Embeddings for Instance Segmentation in Videos},
   author={Athar, Ali and Mahadevan, Sabarinath and O{\v{s}}ep, Aljo{\v{s}}a and Leal-Taix{\'e}, Laura and Leibe, Bastian},
   booktitle={ECCV},
