@@ -104,7 +104,7 @@ class GenericVideoSequence(object):
         self.segmentations = [self.segmentations[t] for t in t_to_keep]
 
     def apply_category_id_mapping(self, mapping):
-        assert set(mapping.keys()) == set(self.instance_categories.keys())
+        assert set(mapping.keys()) == set(self.instance_categories.values())
         self.instance_categories = {
             iid: mapping[current_cat_id] for iid, current_cat_id in self.instance_categories.items()
         }
