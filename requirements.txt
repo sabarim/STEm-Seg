@@ -1,6 +1,6 @@
 tqdm==4.46.0
 torch==1.4.0
-scipy==1.4.1
+scipy==1.10.0
 pycocotools==2.0.1
 imgaug==0.4.0
 numpy==1.22.0
